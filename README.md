@@ -5,12 +5,15 @@ Converts Articulate Rise SCORM packages and converts them into a single HTML bui
 
 A **local, read-only, dependency-free** Python prototype for extracting course content from **Articulate Rise 360 SCORM ZIP exports** and presenting it in **one HTML document**. No LMS, API key, internet connection, or cloud upload is required.
 
+View a demo of the output here: <https://uqgblaze.github.io/Scorm-2-HTML/example>. 
+
 ## What it produces
 
 - One HTML file with a table for every lesson, in course order.
 - Left column: the source block's `family`, `type`, and `variant` where these are present.
 - Right column: headings, text, lists, tables, tabs, accordions, media references, knowledge checks, quizzes, feedback and nested interactions, expanded into readable content.
 - Images from the ZIP embedded into the HTML as Base64 (subject to size caps).
+  - *Note*: The images in the demo were replaced with placeholders to reduce file size. Your output will include images in Base64.  
 - Video/audio URLs displayed as links. Packaged video/audio paths are identified, and can optionally be embedded for small files.
 - A collapsible **View original block data** section beneath each block to preserve inspectable source JSON and help audit unsupported block types.
 - The output HTML does not require JavaScript or a web server.
